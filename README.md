@@ -4,7 +4,9 @@ This is a simple C++ class for interfacing to the TSIC-306 Digital Temperature S
 
 Dependencies:
 
-* Requires PIGPIO, which can downloaded from: http://abyz.co.uk/rpi/pigpio
+* Requires PIGPIO
+  * Download from: http://abyz.co.uk/rpi/pigpio
+  * Extract, ``make && make install`` on your system
 * Uses C++11 features
 
 Basic instructions:
@@ -16,7 +18,17 @@ Basic instructions:
 Compile and run as follows:
 
     make
-    sudo ./tsic-temp
+    sudo ./tsic-temp -h         # Get Help
+    sudo ./tsic-temp -g20       # -g defines that the sensor is connected to GPIO20
+    
+ Optional: install system-wide
+ 
+    sudo make install
+    sudo tsic-temp
+    
+ Uninstall:
+ 
+    sudo make distclean
 
 See also:
 
