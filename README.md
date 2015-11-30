@@ -16,7 +16,7 @@ Basic instructions:
 Compile and run as follows:
 
     make
-    sudo ./main
+    sudo ./tsic-temp
 
 See also:
 
