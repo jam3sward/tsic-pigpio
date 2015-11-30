@@ -4,3 +4,5 @@ main: main.cpp tsic.o
 tsic.o: tsic.h tsic.cpp pigpiomgr.h
 	g++ -c tsic.cpp -std=c++0x
 
+clean:
+	rm -rf *.o tsic-temp
